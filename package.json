@@ -1,0 +1,48 @@
+{
+  "name": "@beeboo/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for BeeBoo - Human-in-the-Loop Infrastructure for AI Agents",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "agents",
+    "human-in-the-loop",
+    "approvals",
+    "knowledge-base"
+  ],
+  "homepage": "https://beeboo.ai",
+  "bugs": {
+    "url": "https://github.com/beeboo-ai/beeboo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beeboo-ai/beeboo.git",
+    "directory": "mcp-server"
+  },
+  "license": "MIT",
+  "author": "BeeBoo Team",
+  "type": "module",
+  "exports": {
+    ".": "./src/server.js"
+  },
+  "main": "src/server.js",
+  "bin": {
+    "beeboo-mcp-server": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "src/"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test/test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.24.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
